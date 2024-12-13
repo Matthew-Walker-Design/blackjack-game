@@ -1,0 +1,107 @@
+/* Reset and Body */
+body {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #f5f5f7, #e4e4e7);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Headings */
+h1.unifrakturmaguntia-regular {
+    font-size: 3em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Game Container */
+#game {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+/* Dealer and Player Sections */
+#dealer, #player {
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+#controls button {
+    margin: 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #007aff;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(124, 126, 128, 0.3);
+}
+
+#controls button:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 12px rgba(149, 151, 154, 0.5);
+}
+
+#controls button:disabled {
+    background-color: #d1d1d6;
+    cursor: not-allowed;
+}
+
+/* Cards */
+.card {
+    display: inline-block;
+    width: 80px; /* Larger card size */
+    height: 120px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #e1e1e1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Message */
+#message {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Win/Loss Conditions */
+body.win {
+    background-color: #b8e994; /* Softer green */
+    color: #333; /* White text for readability */
+}
+
+body.loss {
+    background-color: #f6c6c3; /* Softer red */
+    color: #333; /* White text for readability */
+}
+
+#game.win {
+    background-color: #d4edda; /* Light green for the game box */
+    border-color: #c3e6cb;
+}
+
+#game.loss {
+    background-color: #f8d7da; /* Light red for the game box */
+    border-color: #f5c6cb;
+}
